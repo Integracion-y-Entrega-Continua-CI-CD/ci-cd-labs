@@ -35,11 +35,6 @@ jobs:
 
       - name: Mostrar versión de Git
         run: git --version
-        
-      - name: Simular fallo controlado
-        run: |
-          echo "Simulando un error para validar la protección de main."
-          exit 1
 
       - name: Finalizar pipeline
         run: echo "Pipeline ejecutado correctamente."
